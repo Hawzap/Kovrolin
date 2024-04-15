@@ -782,54 +782,6 @@ label span {
 .img-of__result {
     width: 90px;
     height: 90px;
-}
-
-.img-of__result1 {
-    width: 90px;
-    height: 90px;
-    background-image: url("img/color.png");
-}
-
-.img-of__result2 {
-    width: 90px;
-    height: 90px;
-    background-image: url("img/pile.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-of__result3 {
-    width: 90px;
-    height: 90px;
-    background-image: url("img/withoutsmth.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-of__result4 {
-    width: 90px;
-    height: 90px;
-    background-image: url("img/withoutpic.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-of__result5 {
-    width: 90px;
-    height: 90px;
-    background-image: url("img/overlog.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-of__result6 {
-    width: 90px;
-    height: 90px;
-    background-image: url("img/glue.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

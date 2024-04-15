@@ -13,7 +13,15 @@ function checkPhoneKey(key) {
 }
 
 function hasNonLetterChars(str) {
-    return /[^\p{L}\s]/g.test(str);
+    return /[^a-zA-ZА-Яа-яёЁ\s\u2002-\u200A]/g.test(str);
+}
+
+function singleSelect(label, selectingBlock) {
+    let selected = selectingBlock.querySelectorAll(".active");
+    for (let elem of selected) {
+        elem.classList.remove("active");
+    }
+    label.classList.add("active");
 }
 
 //pop-up start
@@ -98,242 +106,56 @@ repeat.addEventListener("click", function () {
 
 //checked start
 
-const container1 = document.querySelector(".gallery-flex");
-const container2 = document.querySelector(".general");
-const container3 = document.querySelector(".all-type");
-const container4 = document.querySelector(".all-of__pic");
-const container5 = document.querySelector(".all-edging");
-const container6 = document.querySelector(".all-styling");
-
-const choiceImg2 = document.querySelector(".img-of__result2");
-const choiceSubTitle2 = document.querySelector(".text-result2");
-
-const choiceImg3 = document.querySelector(".img-of__result3");
-const choiceSubTitle3 = document.querySelector(".text-result3");
-
-const choiceImg4 = document.querySelector(".img-of__result4");
-const choiceSubTitle4 = document.querySelector(".text-result4");
-
-const choiceImg5 = document.querySelector(".img-of__result5");
-const choiceSubTitle5 = document.querySelector(".text-result5");
-
-const choiceImg6 = document.querySelector(".img-of__result6");
-const choiceSubTitle6 = document.querySelector(".text-result6");
+const selectingBlocks = document.querySelectorAll(".selectingBlock");
+const resultBlocks = document.querySelectorAll(".item-of__results");
 
 const label = document.querySelector(".label-radio");
 
-container1.onclick = function (event) {
-    if (event.target.tagName != "LABEL") return;
+selectingBlocks.forEach((container, i) => {
+    container.addEventListener("click", (e) => {
+        if (e.target.tagName != "LABEL") return;
+        singleSelect(e.target, container);
+        const selectingBlock = e.target.parentNode.parentNode;
+        const containerImgURL = selectingBlock.querySelector(
+            ".selectingBlock-img"
+        ).src;
+        const containerTitle =
+            selectingBlock.querySelector(".headline-carpets").textContent;
+        const resultImg = resultBlocks[i].children[1];
+        const resultTitle = resultBlocks[i].children[2].children[1];
 
-    singleSelect1(event.target);
-};
+        resultImg.style.backgroundImage = `url(${containerImgURL})`;
+        resultTitle.textContent = containerTitle;
+    });
+});
 
-function singleSelect1(label) {
-    let selected = container1.querySelectorAll(".active");
-    for (let elem of selected) {
-        elem.classList.remove("active");
+resultBlocks.forEach((e, i) => {
+    const resultImg = e.children[1];
+    const resultTitle = e.children[2].children[1];
+    if (!resultImg.style.backgroundImage || !resultTitle.textContent) {
+        const containerTitle =
+            selectingBlocks[i].querySelector(".headline-carpets").textContent;
+        const containerImgURL = selectingBlocks[i].querySelector(
+            ".selectingBlock-img"
+        )?.src;
+        resultImg.style.backgroundImage = `url(${containerImgURL})`;
+        resultTitle.textContent = containerTitle;
     }
-    label.classList.add("active");
-}
-//1 end
-
-container2.onclick = function (event) {
-    if (event.target.tagName != "LABEL") return;
-
-    singleSelect2(event.target);
-    if (event.target.classList.contains("pile__1")) {
-        choiceImg2.style.backgroundImage = `url('img/pile.png')`;
-        choiceSubTitle2.textContent = "Ворс Петлевой";
-    }
-
-    if (event.target.classList.contains("pile__2")) {
-        choiceImg2.style.backgroundImage = `url(img/cut.png)`;
-        choiceSubTitle2.textContent = "Ворс Разрезной";
-    }
-
-    if (event.target.classList.contains("pile__3")) {
-        choiceImg2.style.backgroundImage = `url('img/combined.png')`;
-        choiceSubTitle2.textContent = "Ворс комбинированный";
-    }
-
-    if (event.target.classList.contains("pile__4")) {
-        choiceImg2.style.backgroundImage = `url(img/Velor.png)`;
-        choiceSubTitle2.textContent = "Ворс велюр";
-    }
-
-    if (event.target.classList.contains("pile__5")) {
-        choiceImg2.style.backgroundImage = `url(img/individual.png)`;
-        choiceSubTitle2.textContent = "Ворс индивидуальный";
-    }
-};
-
-function singleSelect2(label) {
-    let selected = container2.querySelectorAll(".active");
-    for (let elem of selected) {
-        elem.classList.remove("active");
-    }
-    label.classList.add("active");
-}
-
-//2 end
-
-container3.onclick = function (event) {
-    if (event.target.tagName != "LABEL") return;
-    singleSelect3(event.target);
-
-    if (event.target.classList.contains("one-of__type1")) {
-        choiceImg3.style.backgroundImage = `url(img/withsmth.png)`;
-        choiceSubTitle3.textContent = "С подложкой";
-    }
-
-    if (event.target.classList.contains("one-of__type2")) {
-        choiceImg3.style.backgroundImage = `url(img/withoutsmth.png)`;
-        choiceSubTitle3.textContent = "без подложки";
-    }
-};
-
-function singleSelect3(label) {
-    let selected = container3.querySelectorAll(".active");
-    for (let elem of selected) {
-        elem.classList.remove("active");
-    }
-    label.classList.add("active");
-}
-
-//3 end
-
-container4.onclick = function (event) {
-    if (event.target.tagName != "LABEL") return;
-
-    singleSelect4(event.target);
-
-    if (event.target.classList.contains("one-of__pic_1")) {
-        choiceImg4.style.backgroundImage = `url(img/withpic.png)`;
-        choiceSubTitle4.textContent = "С рисунком";
-    }
-
-    if (event.target.classList.contains("one-of__pic_2")) {
-        choiceImg4.style.backgroundImage = `url(img/withoutpic.png)`;
-        choiceSubTitle4.textContent = "Без рисунка";
-    }
-};
-
-function singleSelect4(label) {
-    let selected = container4.querySelectorAll(".active");
-    for (let elem of selected) {
-        elem.classList.remove("active");
-    }
-    label.classList.add("active");
-}
-
-//4 end
-
-container5.onclick = function (event) {
-    if (event.target.tagName != "LABEL") return;
-
-    singleSelect5(event.target);
-    if (event.target.classList.contains("one-of__edging_1")) {
-        choiceImg5.style.backgroundImage = `url('img/overlog.png')`;
-        choiceSubTitle5.textContent = "Оверлог";
-    }
-
-    if (event.target.classList.contains("one-of__edging_2")) {
-        choiceImg5.style.backgroundImage = `url('img/small.png')`;
-        choiceSubTitle5.textContent = "кант маленький";
-    }
-
-    if (event.target.classList.contains("one-of__edging_3")) {
-        choiceImg5.style.backgroundImage = `url('img/big.png')`;
-        choiceSubTitle5.textContent = "кант большой";
-    }
-
-    if (event.target.classList.contains("one-of__edging_4")) {
-        choiceImg5.style.backgroundImage = `url('img/for.png')`;
-        choiceSubTitle5.textContent = "Под плинтус";
-    }
-
-    if (event.target.classList.contains("one-of__edging_5")) {
-        choiceImg5.style.backgroundImage = `url('img/crai.png')`;
-        choiceSubTitle5.textContent = "подгиб края";
-    }
-};
-
-function singleSelect5(label) {
-    let selected = container5.querySelectorAll(".active");
-    for (let elem of selected) {
-        elem.classList.remove("active");
-    }
-    label.classList.add("active");
-}
-
-container6.onclick = function (event) {
-    if (event.target.tagName != "LABEL") return;
-
-    singleSelect6(event.target);
-    if (event.target.classList.contains("one-of__styling_1")) {
-        choiceImg6.style.backgroundImage = `url('img/free.png')`;
-        choiceSubTitle6.textContent = "Свободнолежащая";
-    }
-
-    if (event.target.classList.contains("one-of__styling_2")) {
-        choiceImg6.style.backgroundImage = `url('img/glue.png')`;
-        choiceSubTitle6.textContent = "На клей / фиксацию";
-    }
-
-    if (event.target.classList.contains("one-of__styling_3")) {
-        choiceImg6.style.backgroundImage = `url('img/regulare.png')`;
-        choiceSubTitle6.textContent = "на Гриппер рейку";
-    }
-};
-
-function singleSelect6(label) {
-    let selected = container6.querySelectorAll(".active");
-    for (let elem of selected) {
-        elem.classList.remove("active");
-    }
-    label.classList.add("active");
-}
+});
 
 //checked end
 
 //change choice start
 
-const elem1 = document.querySelector(".elem1");
-const elem2 = document.querySelector(".elem2");
-const elem3 = document.querySelector(".elem3");
-const elem4 = document.querySelector(".elem4");
-const elem5 = document.querySelector(".elem5");
-const elem6 = document.querySelector(".elem6");
-
-elem1.onclick = function (e) {
-    e.preventDefault();
-    container1.scrollIntoView({ block: "center", behavior: "smooth" });
-};
-
-elem2.onclick = function (e) {
-    e.preventDefault();
-    container2.scrollIntoView({ block: "center", behavior: "smooth" });
-};
-
-elem3.onclick = function (e) {
-    e.preventDefault();
-    container3.scrollIntoView({ block: "center", behavior: "smooth" });
-};
-
-elem4.onclick = function (e) {
-    e.preventDefault();
-    container4.scrollIntoView({ block: "center", behavior: "smooth" });
-};
-
-elem5.onclick = function (e) {
-    e.preventDefault();
-    container5.scrollIntoView({ block: "center", behavior: "smooth" });
-};
-
-elem6.onclick = function (e) {
-    e.preventDefault();
-    container6.scrollIntoView({ block: "center", behavior: "smooth" });
-};
+resultBlocks.forEach((element, i) => {
+    element.addEventListener("click", (e) => {
+        e.preventDefault();
+        selectingBlocks[i].scrollIntoView({
+            block: "center",
+            behavior: "smooth",
+        });
+    });
+});
 
 // validation form
 
@@ -342,6 +164,7 @@ const validationForm = document.querySelectorAll(".validationForm");
 validationForm.forEach((e) => {
     if (e.id == "name") {
         e.addEventListener("blur", function () {
+            console.log("hello");
             if (hasNonLetterChars(e.value)) {
                 e.classList.add("invalid");
             }
