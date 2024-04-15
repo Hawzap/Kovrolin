@@ -1,0 +1,1502 @@
+body {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+input:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+button {
+    cursor: pointer;
+}
+/* Consolas, 'Courier New', monospace */
+.wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("img/Баннер.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 802px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 86px;
+}
+
+.first-elem {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 26px;
+}
+
+.text-info {
+    font-family: "Montserrat", sans-serif;
+    color: #a18a70;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+.kovrolin {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.kovrolin-second {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.info {
+    margin-top: 15px;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+}
+
+.e-mail {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.media {
+    margin-right: 22px;
+}
+
+.mail {
+    margin-right: 0;
+}
+
+.bottom-header {
+    margin-top: 140px;
+}
+
+.kovrolin-information {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 56px;
+}
+
+.headline {
+    font-family: "Oswald", sans-serif;
+    font-size: 150px;
+    margin-bottom: 30px;
+}
+
+.headline-second {
+    font-family: "Oswald", sans-serif;
+    font-size: 53px;
+}
+
+.headline-third {
+    font-family: "Oswald", sans-serif;
+    font-size: 26.2px;
+}
+
+.add-new__class {
+    font-weight: 300;
+}
+
+.more-information {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: 23px;
+}
+
+.more-information > li {
+    margin-bottom: 13px;
+}
+
+.one-of__information {
+    position: relative;
+}
+
+.one-of__information::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    top: 10px;
+    left: 0px;
+    position: absolute;
+    margin-left: -12px;
+}
+
+.more-information > li:last-child {
+    margin-bottom: 0;
+}
+
+.more-info__kovrolin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    margin-right: -96px;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    margin-left: -7px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+.banner-text1 {
+    top: 31px;
+    left: 198px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.banner-text2 {
+    top: 58px;
+    left: 170px;
+    width: 311px;
+}
+
+.banner2 {
+    margin-left: 19px;
+}
+
+.youtube {
+    background: #fffaec;
+    padding: 100px 0 100px 0;
+}
+
+.items-youtube {
+    display: flex;
+}
+
+.text-about {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin-left: 60px;
+}
+
+.headline-info {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.text-youtube {
+    font-size: 24px;
+    font-weight: 300;
+    width: 509px;
+}
+
+.for-you {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 100px 0 100px 0;
+}
+
+.for-you__headline {
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 74px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.all-option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 32px;
+}
+
+.one-item {
+    width: 270px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-right: 37px;
+}
+
+.animation-for__img {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.animation-for__img img {
+    transition: 0.5s;
+    display: block;
+}
+
+.animation-for__img img:hover {
+    transform: scale(1.1);
+}
+
+.one-item__top {
+    margin-bottom: 49px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.title-gallery {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.whatching {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 26px;
+}
+
+.whatch {
+    margin-left: 5px;
+}
+
+.order-items {
+    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.order-expert {
+    background-image: url("img/BG\ PIC.png");
+    height: 705px;
+}
+
+.order-headline {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.order-title {
+    font-weight: 700;
+    font-size: 50px;
+    width: 630px;
+    line-height: 74px;
+    margin-bottom: 10px;
+}
+
+.order-text {
+    font-weight: 300;
+    font-size: 24px;
+    width: 480px;
+    line-height: 36px;
+}
+
+.form-number {
+    width: 367px;
+    height: 393px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    text-transform: uppercase;
+}
+
+.call-expert {
+    margin: 50px 53px 0 54px;
+}
+
+.input-number {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    width: 270px;
+    margin-bottom: 15px;
+}
+
+.small-rule {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    margin-bottom: 30px;
+    width: 275px;
+}
+
+.position {
+    margin-left: 13px;
+}
+
+input,
+button {
+    display: block;
+}
+
+.number-for__call {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px white;
+    padding-bottom: 3px;
+    margin: 0 105px 30px 105px;
+    width: 153px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+/* .number-for__call::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1px;
+	width: 300px;
+	background-color: white;
+	z-index: 2;
+} */
+
+.number-for__call::placeholder {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+.send-info {
+    color: white;
+    border: 0;
+    background: linear-gradient(81.63deg, #f8a400 0%, #f80b00 80%);
+    box-shadow: 0px 10px 30px rgba(245, 89, 36, 0.75);
+    width: 158px;
+    height: 38px;
+    margin: 0 105px 30px 105px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.flex-for__checkbox {
+    display: flex;
+}
+
+.number-label {
+    color: #707070;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    width: 215px;
+    margin-left: 10px;
+}
+
+#number {
+    margin-left: 76px;
+}
+
+label input {
+    display: none; /* <--скрываем дефолтный чекбокс */
+}
+
+label span {
+    /* <-- стилизируем новый */
+    height: 16px;
+    width: 16px;
+    border: 1px solid gray;
+    display: block;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 0;
+    margin-left: 76px;
+}
+
+[type="checkbox"]:checked + span {
+    /* <-- ставим иконку, когда чекбокс включен  */
+    content: "";
+    background-image: url("img/Icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.position-flex {
+    display: flex;
+}
+
+.another-option {
+    background: #fffaec;
+    text-transform: uppercase;
+    padding-bottom: 105px;
+}
+
+.title-another {
+    font-family: "Oswald", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 74px;
+    margin-bottom: 50px;
+}
+
+.variants {
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+    margin-bottom: 24px;
+}
+
+.number__chapter {
+    display: flex;
+}
+
+.order-number {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.text-of__order {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    align-items: end;
+    margin: 20px 0 0 10px;
+}
+
+.numbers-of__slide {
+    display: flex;
+    margin-top: 17px;
+}
+
+.number-of__slide {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.arrow {
+    transform: rotate(180deg);
+    margin-left: 15px;
+    margin-top: 18px;
+}
+
+.arrow1 {
+    margin-right: 15px;
+    margin-top: 18px;
+}
+
+.img-of__gallery {
+    margin-bottom: 10px;
+}
+
+.gallery-container {
+    display: flex;
+    position: relative;
+}
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-of__others {
+    margin-right: 21px;
+}
+
+.last-item {
+    margin: 0;
+}
+
+.last-item__top {
+    margin-right: 0;
+}
+
+.top-item {
+    margin-bottom: 35px;
+}
+
+.text-under__photo {
+    font-family: "Montserrat", sans-serif;
+    width: 80px;
+    text-align: center;
+}
+
+.number-of__carpet {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+.choose {
+    font-weight: 500;
+    font-size: 10px;
+    border: 1px solid #000000;
+    padding: 3px 4px 3px 4px;
+    width: 52px;
+    margin-left: 8px;
+}
+
+.variants-second {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.second-number {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.text-under__img {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.title-ofcovering {
+    margin-bottom: 12px;
+}
+
+.headline-carpets {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.choose-second {
+    margin: 0;
+    margin-right: 26px;
+}
+
+.general {
+    display: flex;
+    justify-content: center;
+}
+
+.one-of__carpcovering {
+    margin-right: 25px;
+}
+
+.last-of__carpcovering {
+    margin-right: 0;
+}
+
+.variants-third {
+    margin-bottom: 30px;
+}
+
+.all-type {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.one-of__type {
+    margin-right: 20px;
+}
+
+.one-of__type:last-child {
+    margin: 0;
+}
+
+.title-of__type {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.all-of__pic {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.one-of__pic {
+    margin-right: 20px;
+}
+
+.one-of__pic:last-child {
+    margin-right: 0;
+}
+
+.title-of__pic {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.variants-fourth {
+    margin-bottom: 30px;
+}
+
+.all-edging {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.one-of__edging {
+    margin-right: 20px;
+}
+
+.one-of__edging:last-child {
+    margin-right: 0;
+}
+
+.title-of__edging {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.variants-sixth {
+    margin-bottom: 24px;
+}
+
+.all-styling {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.one-of__styling {
+    margin-right: 20px;
+}
+
+.one-of__styling:last-child {
+    margin-right: 0;
+}
+
+.title-of__styling {
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.results {
+    color: white;
+    background-image: url("img/results.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 794px;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+.title-choice {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+.number-of__result {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.img-of__result {
+    width: 90px;
+    height: 90px;
+}
+
+.img-of__result1 {
+    width: 90px;
+    height: 90px;
+    background-image: url("img/color.png");
+}
+
+.img-of__result2 {
+    width: 90px;
+    height: 90px;
+    background-image: url("img/pile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-of__result3 {
+    width: 90px;
+    height: 90px;
+    background-image: url("img/withoutsmth.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-of__result4 {
+    width: 90px;
+    height: 90px;
+    background-image: url("img/withoutpic.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-of__result5 {
+    width: 90px;
+    height: 90px;
+    background-image: url("img/overlog.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-of__result6 {
+    width: 90px;
+    height: 90px;
+    background-image: url("img/glue.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-of__results {
+    display: flex;
+    margin-right: 50px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.color-results {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.text-result {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 10px;
+    width: 134px;
+    margin-bottom: 5px;
+}
+
+.change-result {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px white;
+    margin-left: 10px;
+}
+
+.top-item2 {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.bottom-item {
+    display: flex;
+    margin-left: 71px;
+    margin-bottom: 100px;
+}
+
+.form {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.form-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+.form-master {
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.input-forms {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.input-body {
+    position: relative;
+}
+
+.type-text {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    width: 190px;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 3px;
+    margin-right: 30px;
+}
+
+.userInfoLabel {
+    position: absolute;
+    z-index: 100;
+    transform: translateY(calc(-50% - 9px));
+    transform-origin: left center;
+    top: 50%;
+    left: 6px;
+    color: #707070;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: none;
+    font-family: "Oswald", sans-serif;
+    pointer-events: none;
+    /* padding: 1px 3px; */
+    /* opacity: 0.5; */
+    transition: 0.5s;
+}
+.type-text:focus + .userInfoLabel,
+.type-text:not(:placeholder-shown) + .userInfoLabel {
+    font-size: 15px;
+    color: white;
+    /* text-transform: none; */
+    top: -3px;
+    left: 0px;
+}
+.validationForm.invalid {
+    color: #ff6262;
+}
+
+.validationForm.invalid {
+    color: #ff6262;
+}
+
+.send-info2 {
+    color: white;
+    border: 0;
+    background: linear-gradient(81.63deg, #f8a400 0%, #f80b00 80%);
+
+    width: 158px;
+    height: 38px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.send-info2:hover {
+    box-shadow: 0px 10px 30px rgba(245, 89, 36, 0.75);
+}
+
+.another-variant {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    border: solid 1px white;
+    width: 349px;
+}
+
+.or {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.number-or {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.works {
+    background-color: #fffaec;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+}
+
+.works-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.our-works {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.one-of__works {
+    margin-right: 30px;
+}
+
+.one-of__works:last-child {
+    margin-right: 0;
+}
+
+.text-of__works {
+    margin-top: 10px;
+}
+
+.name-of__work {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.undertext {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    width: 580px;
+    line-height: 15px;
+}
+
+.numbers-of__slide-work {
+    display: flex;
+    background-color: #fffaec;
+    position: absolute;
+    z-index: 2;
+    bottom: 71px;
+    right: 50px;
+}
+
+.question-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.question-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.question-text:last-child {
+    margin: 0;
+}
+
+.end {
+    background-color: #000000;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 31px;
+}
+
+.end-items {
+    display: flex;
+}
+
+.youtube-video {
+    margin-right: 100px;
+}
+
+.contacts {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.mail-number-button {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.number-end {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mail-end {
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.mail-number {
+    margin-right: 74px;
+}
+
+.social-end {
+    display: flex;
+    margin-right: 65px;
+}
+
+.youtube-end {
+    width: 20px;
+    height: 20px;
+    background-color: #707070;
+    background-image: url("img/youtube.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.instagram-end {
+    width: 20px;
+    height: 20px;
+    background-color: #707070;
+    background-image: url("img/instagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.facebook-end {
+    width: 20px;
+    height: 20px;
+    background-color: #707070;
+    background-image: url("img/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 3px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.whatsApp-end {
+    width: 20px;
+    height: 20px;
+    background-color: #707070;
+    background-image: url("img/whatsApp1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 4px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.telegram-end {
+    width: 20px;
+    height: 20px;
+    background-color: #707070;
+    background-image: url("img/telegram1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 4px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.animation-end {
+    margin-right: 10px;
+}
+
+.animation-end:last-child {
+    margin: 0;
+}
+
+.animation-end:hover {
+    background-color: #fff;
+}
+
+.one-ff {
+    color: #707070;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.animation-text-end:hover {
+    color: white;
+}
+
+.time-end {
+    margin-right: 30px;
+}
+
+.all-info__end {
+    display: flex;
+    text-transform: uppercase;
+    border-bottom: 1px solid #303030;
+    padding-bottom: 18px;
+}
+
+.end-items {
+    margin-bottom: 50px;
+}
+
+.avtor-text {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #303030;
+    text-align: center;
+}
+
+/* pop-up */
+
+.popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.popup-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.body-succsessful {
+    position: absolute;
+    min-height: 100%;
+    top: 30%;
+    left: 37.8%;
+}
+
+.popup-content {
+    width: 367px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    border: 3px solid white;
+    text-transform: uppercase;
+    transform: translateY(-350px) scale(0);
+    z-index: 3;
+    transition: all 0.4s;
+}
+
+.popup-content.active {
+    transform: translateY(0px) scale(1);
+}
+
+.pop-up__text {
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 12px;
+    width: 226px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.center__pop-up {
+    display: flex;
+    justify-content: center;
+}
+
+.send-info-pop-up {
+    color: white;
+    border: 0;
+    background: linear-gradient(81.63deg, #f8a400 0%, #f80b00 80%);
+    box-shadow: 0px 10px 30px rgba(245, 89, 36, 0.75);
+    width: 190px;
+    height: 38px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.inputs__pop-up {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+}
+
+.name-pop-up {
+    color: #ff6262;
+}
+
+.change-input__pop-up {
+    background-color: transparent;
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 190px;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+}
+
+.name-pop-up.invalid {
+    color: #ff6262;
+}
+
+.mail-pop-up.invalid {
+    color: #ff6262;
+}
+
+.flex-for__checkbox-popup {
+    display: flex;
+}
+
+label input {
+    display: none; /* <--скрываем дефолтный чекбокс */
+}
+
+label span {
+    /* <-- стилизируем новый */
+    height: 16px;
+    width: 16px;
+    border: 1px solid gray;
+    display: block;
+    background-color: #fff;
+    border-radius: 1px;
+    border: 0;
+}
+
+[type="checkbox"]:checked + span {
+    /* <-- ставим иконку, когда чекбокс включен  */
+    content: "";
+    background-image: url("img/Icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.position-flex-popup {
+    display: flex;
+    position: absolute;
+    left: 9px;
+}
+
+.number-label-popup {
+    color: #707070;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    width: 215px;
+    margin-left: 10px;
+}
+
+.close-pop-up {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.sucsessful-form {
+    width: 367px;
+    height: 242px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7.5px);
+    border-radius: 30px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.sucsessful-form.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+}
+
+.title-popup {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    line-height: 44px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.text-description {
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.repeat-pop-up {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.repeat-popup {
+    color: #000;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+/* counter start */
+.radio {
+    display: none;
+    position: absolute;
+}
+
+.label-radio {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 10px;
+    border: 1px solid #000000;
+    padding: 3px 4px 3px 4px;
+    width: 52px;
+    height: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.label-radio.active {
+    font-size: 0;
+    background-image: url("img/Выбрать.svg");
+    background-size: cover;
+    background-position: center;
+    padding: 14px 44px 5px 15px;
+}
+
+.label-radio2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 10px;
+    border: 1px solid #000000;
+    padding: 3px 4px 3px 4px;
+    width: 52px;
+    height: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.label-radio2.active {
+    font-size: 0;
+    background-image: url("img/Выбрать.svg");
+    background-size: cover;
+    background-position: center;
+}
+/* counter end */
+
+/*  font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-family: 'Oswald', sans-serif; */
