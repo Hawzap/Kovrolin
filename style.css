@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
@@ -15,16 +18,6 @@ h6 {
     padding: 0;
     margin: 0;
     line-height: 1;
-}
-
-h2 {
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    margin: 0;
-    padding: 0;
 }
 
 p {
@@ -65,7 +58,12 @@ header {
     height: 802px;
 }
 
+.animation-for__img {
+    width: 100%;
+}
+
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: 86px;
@@ -119,14 +117,7 @@ header {
 .social {
     display: flex;
     justify-content: center;
-}
-
-.media {
-    margin-right: 22px;
-}
-
-.mail {
-    margin-right: 0;
+    gap: 0 22px;
 }
 
 .bottom-header {
@@ -199,8 +190,9 @@ header {
 }
 
 .banner {
-    margin-right: -96px;
-    position: relative;
+    position: absolute;
+    top: 553.4px;
+    right: 1.5%;
 }
 
 .banner-text {
@@ -233,12 +225,12 @@ header {
 
 .items-youtube {
     display: flex;
+    gap: 30px 60px;
 }
 
 .text-about {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    margin-left: 60px;
 }
 
 .headline-info {
@@ -271,14 +263,18 @@ header {
 .all-option {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 32px;
+    gap: 49px 37px;
+    justify-content: center;
 }
 
 .one-item {
     width: 270px;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    margin-right: 37px;
+}
+
+.one-item .animation-for__img img {
+    width: 100%;
 }
 
 .animation-for__img {
@@ -295,18 +291,15 @@ header {
     transform: scale(1.1);
 }
 
-.one-item__top {
-    margin-bottom: 49px;
-}
-
-.no-padding {
-    padding: 0;
-}
-
 .description {
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
+}
+
+.one-item .youtube-logo {
+    width: 18px;
+    height: 12px;
 }
 
 .title-gallery {
@@ -327,15 +320,15 @@ header {
 }
 
 .order-items {
-    padding: 100px 0 100px 0;
     display: flex;
     justify-content: space-between;
     color: #ffffff;
 }
 
 .order-expert {
+    padding: 200px 0;
     background-image: url("img/BG\ PIC.png");
-    height: 705px;
+    background-size: cover;
 }
 
 .order-headline {
@@ -346,7 +339,7 @@ header {
 .order-title {
     font-weight: 700;
     font-size: 50px;
-    width: 630px;
+    max-width: 630px;
     line-height: 74px;
     margin-bottom: 10px;
 }
@@ -354,7 +347,7 @@ header {
 .order-text {
     font-weight: 300;
     font-size: 24px;
-    width: 480px;
+    max-width: 480px;
     line-height: 36px;
 }
 
@@ -370,7 +363,9 @@ header {
 }
 
 .call-expert {
-    margin: 50px 53px 0 54px;
+    max-width: 275px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .input-number {
@@ -378,7 +373,7 @@ header {
     font-weight: 700;
     font-size: 30px;
     line-height: 44px;
-    width: 270px;
+    text-align: center;
     margin-bottom: 15px;
 }
 
@@ -387,11 +382,6 @@ header {
     font-weight: 400;
     font-size: 10px;
     margin-bottom: 30px;
-    width: 275px;
-}
-
-.position {
-    margin-left: 13px;
 }
 
 input,
@@ -399,13 +389,18 @@ button {
     display: block;
 }
 
+.fields-container {
+    width: 155px;
+    margin: 0 auto;
+}
+
 .number-for__call {
     background-color: transparent;
     border: 0;
     border-bottom: solid 1px white;
     padding-bottom: 3px;
-    margin: 0 105px 30px 105px;
-    width: 153px;
+    margin-bottom: 30px;
+    width: 100%;
     color: white;
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
@@ -413,17 +408,6 @@ button {
     font-size: 15px;
     letter-spacing: 0.05em;
 }
-
-/* .number-for__call::after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 1px;
-	width: 300px;
-	background-color: white;
-	z-index: 2;
-} */
 
 .number-for__call::placeholder {
     color: white;
@@ -439,9 +423,9 @@ button {
     border: 0;
     background: linear-gradient(81.63deg, #f8a400 0%, #f80b00 80%);
     box-shadow: 0px 10px 30px rgba(245, 89, 36, 0.75);
-    width: 158px;
+    width: 100%;
     height: 38px;
-    margin: 0 105px 30px 105px;
+    margin-bottom: 30px;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -458,7 +442,7 @@ button {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
-    width: 215px;
+    max-width: 215px;
     margin-left: 10px;
 }
 
@@ -509,11 +493,26 @@ label span {
     margin-bottom: 50px;
 }
 
-.variants {
-    display: flex;
-    justify-content: space-between;
-    height: 61px;
-    margin-bottom: 24px;
+.arrow {
+    transform: rotate(180deg);
+    margin-left: 15px;
+    margin-top: 18px;
+}
+
+.arrow1 {
+    margin-right: 15px;
+    margin-top: 18px;
+}
+
+.img-of__gallery {
+    margin-bottom: 10px;
+}
+
+/* ===== Constructor Main Styles Start ===== */
+
+.constructorTitle {
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 .number__chapter {
@@ -534,63 +533,24 @@ label span {
     margin: 20px 0 0 10px;
 }
 
-.numbers-of__slide {
-    display: flex;
-    margin-top: 17px;
+.gallery-flex .animation-for__img img,
+.general .animation-for__img img,
+.all-type .animation-for__img img,
+.all-of__pic .animation-for__img img,
+.all-edging .animation-for__img img,
+.all-styling .animation-for__img img {
+    width: 100%;
 }
 
-.number-of__slide {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-}
+/* ===== Constructor Main Styles End ===== */
 
-.arrow {
-    transform: rotate(180deg);
-    margin-left: 15px;
-    margin-top: 18px;
-}
-
-.arrow1 {
-    margin-right: 15px;
-    margin-top: 18px;
-}
-
-.img-of__gallery {
-    margin-bottom: 10px;
-}
-
-.gallery-container {
-    display: flex;
-    position: relative;
-}
+/* ===== Carpet Color Start ===== */
 
 .gallery-flex {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 80px);
+    gap: 35px 21px;
     justify-content: center;
-}
-
-.gallery-flex1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery-of__others {
-    margin-right: 21px;
-}
-
-.last-item {
-    margin: 0;
-}
-
-.last-item__top {
-    margin-right: 0;
-}
-
-.top-item {
-    margin-bottom: 35px;
 }
 
 .text-under__photo {
@@ -606,24 +566,7 @@ label span {
     margin-bottom: 10px;
 }
 
-.choose {
-    font-weight: 500;
-    font-size: 10px;
-    border: 1px solid #000000;
-    padding: 3px 4px 3px 4px;
-    width: 52px;
-    margin-left: 8px;
-}
-
-.variants-second {
-    display: flex;
-    margin-bottom: 24px;
-}
-
-.second-number {
-    margin-top: 50px;
-    margin-bottom: 0;
-}
+/* ===== Carpet Covering Start ===== */
 
 .text-under__img {
     font-family: "Montserrat", sans-serif;
@@ -651,35 +594,32 @@ label span {
 }
 
 .general {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 218px);
     justify-content: center;
+    gap: 35px 25px;
 }
 
-.one-of__carpcovering {
-    margin-right: 25px;
-}
+/* ===== Carpet Covering End ===== */
 
-.last-of__carpcovering {
-    margin-right: 0;
-}
-
-.variants-third {
-    margin-bottom: 30px;
-}
+/* ===== Type Of Pile Start ===== */
 
 .all-type {
     display: flex;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     justify-content: center;
+    gap: 35px 20px;
 }
 
-.one-of__type {
-    margin-right: 20px;
+.all-type > div,
+.all-of__pic > div {
+    max-width: 585px;
 }
 
-.one-of__type:last-child {
-    margin: 0;
+.all-type > div .animation-for__img img,
+.all-of__pic > div .animation-for__img img {
+    width: 100%;
 }
 
 .title-of__type {
@@ -692,14 +632,7 @@ label span {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     justify-content: center;
-}
-
-.one-of__pic {
-    margin-right: 20px;
-}
-
-.one-of__pic:last-child {
-    margin-right: 0;
+    gap: 30px 20px;
 }
 
 .title-of__pic {
@@ -707,23 +640,17 @@ label span {
     margin-bottom: 10px;
 }
 
-.variants-fourth {
-    margin-bottom: 30px;
-}
+/* ===== Type Of Pile End ===== */
+
+/* ===== Covering Picture Start ===== */
 
 .all-edging {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 218px);
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     justify-content: center;
-}
-
-.one-of__edging {
-    margin-right: 20px;
-}
-
-.one-of__edging:last-child {
-    margin-right: 0;
+    gap: 35px 20px;
 }
 
 .title-of__edging {
@@ -731,23 +658,24 @@ label span {
     margin-bottom: 10px;
 }
 
-.variants-sixth {
-    margin-bottom: 24px;
-}
+/* ===== Covering Picture End ===== */
+
+/* ===== Laying Way Start ===== */
 
 .all-styling {
     display: flex;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     justify-content: center;
+    gap: 35px 20px;
 }
 
-.one-of__styling {
-    margin-right: 20px;
+.all-styling > div {
+    max-width: 380px;
 }
 
-.one-of__styling:last-child {
-    margin-right: 0;
+.all-styling > div .animation-for__img img {
+    width: 100%;
 }
 
 .title-of__styling {
@@ -755,13 +683,14 @@ label span {
     margin-bottom: 10px;
 }
 
+/* ===== Laying Way Start ===== */
+
 .results {
     color: white;
     background-image: url("img/results.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 794px;
-    padding-top: 100px;
+    padding: 100px 0;
     text-transform: uppercase;
 }
 
@@ -789,11 +718,8 @@ label span {
 
 .item-of__results {
     display: flex;
-    margin-right: 50px;
-}
-
-.no-margin {
-    margin: 0;
+    flex-shrink: 0;
+    /* margin-right: 50px; */
 }
 
 .color-results {
@@ -826,15 +752,17 @@ label span {
     margin-left: 10px;
 }
 
-.top-item2 {
+.all-results > div {
     display: flex;
+    gap: 0 50px;
+}
+
+.top-item {
     margin-bottom: 50px;
 }
 
 .bottom-item {
-    display: flex;
-    margin-left: 71px;
-    margin-bottom: 100px;
+    margin: 0 0 100px 70px;
 }
 
 .form {
@@ -857,7 +785,14 @@ label span {
 
 .input-forms {
     display: flex;
+    gap: 25px 30px;
     margin-bottom: 45px;
+}
+
+.input-forms__wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 0 30px;
 }
 
 .input-body {
@@ -876,7 +811,7 @@ label span {
     width: 190px;
     border-bottom: 1px solid #707070;
     padding-bottom: 3px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 
 .userInfoLabel {
@@ -892,15 +827,12 @@ label span {
     text-transform: none;
     font-family: "Oswald", sans-serif;
     pointer-events: none;
-    /* padding: 1px 3px; */
-    /* opacity: 0.5; */
     transition: 0.5s;
 }
 .type-text:focus + .userInfoLabel,
 .type-text:not(:placeholder-shown) + .userInfoLabel {
     font-size: 15px;
     color: white;
-    /* text-transform: none; */
     top: -3px;
     left: 0px;
 }
@@ -916,7 +848,6 @@ label span {
     color: white;
     border: 0;
     background: linear-gradient(81.63deg, #f8a400 0%, #f80b00 80%);
-
     width: 158px;
     height: 38px;
     font-family: "Oswald", sans-serif;
@@ -931,11 +862,10 @@ label span {
 }
 
 .another-variant {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding: 10px 20px 10px 20px;
     border: solid 1px white;
-    width: 349px;
 }
 
 .or {
@@ -971,15 +901,16 @@ label span {
     display: flex;
     justify-content: center;
     position: relative;
+    gap: 50px 30px;
     margin-bottom: 100px;
 }
 
-.one-of__works {
-    margin-right: 30px;
+.our-works > div {
+    max-width: 580px;
 }
 
-.one-of__works:last-child {
-    margin-right: 0;
+.our-works > div .animation-for__img img {
+    width: 100%;
 }
 
 .text-of__works {
@@ -998,7 +929,6 @@ label span {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    width: 580px;
     line-height: 15px;
 }
 
@@ -1078,77 +1008,46 @@ label span {
 
 .social-end {
     display: flex;
-    margin-right: 65px;
+    gap: 10px;
+}
+
+.social-end__icon {
+    width: 20px;
+    height: 20px;
+    background-color: #707070;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.social-end__icon:hover {
+    background-color: #fff;
 }
 
 .youtube-end {
-    width: 20px;
-    height: 20px;
-    background-color: #707070;
     background-image: url("img/youtube.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    transition: 0.5s;
 }
 
 .instagram-end {
-    width: 20px;
-    height: 20px;
-    background-color: #707070;
     background-image: url("img/instagram.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    transition: 0.5s;
 }
 
 .facebook-end {
-    width: 20px;
-    height: 20px;
-    background-color: #707070;
     background-image: url("img/facebook.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 3px;
-    border-radius: 50%;
-    transition: 0.5s;
 }
 
 .whatsApp-end {
-    width: 20px;
-    height: 20px;
-    background-color: #707070;
     background-image: url("img/whatsApp1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 4px;
-    border-radius: 50%;
-    transition: 0.5s;
 }
 
 .telegram-end {
-    width: 20px;
-    height: 20px;
-    background-color: #707070;
     background-image: url("img/telegram1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 4px;
-    border-radius: 50%;
-    transition: 0.5s;
 }
 
-.animation-end {
-    margin-right: 10px;
-}
-
-.animation-end:last-child {
-    margin: 0;
-}
-
-.animation-end:hover {
-    background-color: #fff;
+.contact-info {
+    display: flex;
+    gap: 0 30px;
 }
 
 .one-ff {
@@ -1165,12 +1064,10 @@ label span {
     color: white;
 }
 
-.time-end {
-    margin-right: 30px;
-}
-
 .all-info__end {
     display: flex;
+    gap: 0 65px;
+    align-items: center;
     text-transform: uppercase;
     border-bottom: 1px solid #303030;
     padding-bottom: 18px;
@@ -1408,14 +1305,14 @@ label span {
 }
 
 .label-radio {
+    width: 60px;
+    height: 20px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: 500;
     font-size: 10px;
     border: 1px solid #000000;
     padding: 3px 4px 3px 4px;
-    width: 52px;
-    height: 11px;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -1429,14 +1326,14 @@ label span {
 }
 
 .label-radio2 {
+    width: 60px;
+    height: 20px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: 500;
     font-size: 10px;
     border: 1px solid #000000;
     padding: 3px 4px 3px 4px;
-    width: 52px;
-    height: 11px;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -1448,7 +1345,3 @@ label span {
     background-position: center;
 }
 /* counter end */
-
-/*  font-family: 'Montserrat', sans-serif;
-	font-family: 'Montserrat Alternates', sans-serif;
-	font-family: 'Oswald', sans-serif; */
